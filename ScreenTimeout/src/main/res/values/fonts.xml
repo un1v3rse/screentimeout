@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="row_font" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

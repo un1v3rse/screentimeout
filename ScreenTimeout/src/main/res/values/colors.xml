@@ -1,0 +1,11 @@
+<resources>
+
+    <color name="bg">#FFF</color>
+    <color name="separator">#777</color>
+    <color name="text">#000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>
