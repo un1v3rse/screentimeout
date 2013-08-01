@@ -8,29 +8,52 @@
     android:padding="@dimen/padding"
     >
 
-    <CheckBox android:id="@+id/screen_timeout_enabled"
-        android:text="@string/screen_timeout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/detail_screen_blurb"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <CheckBox android:id="@+id/screen_timeout_enabled"
+                android:text="@string/screen_timeout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
 
 
-    <SeekBar android:id="@+id/screen_timeout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/padding"
-        />
+            <SeekBar android:id="@+id/screen_timeout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding"
+                />
 
-    <CheckBox android:id="@+id/music_volume_enabled"
-        android:text="@string/music_volume"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+            <CheckBox android:id="@+id/music_volume_enabled"
+                android:text="@string/music_volume"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <SeekBar android:id="@+id/music_volume"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/padding"
-        />
+            <SeekBar android:id="@+id/music_volume"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/padding"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

@@ -147,13 +147,13 @@ public final class Model {
 
         for (ApplicationInfo p : packages) {
 
-//            if (p.versionName == null) {
-//                continue ;
-//            }
-
             String uid = p.packageName;
             String name = p.loadLabel(pm).toString();
-            String class_name = p.className;
+
+            // if the name matches the app, it's probably a system process, don't load it
+            if (uid.equals( name ))
+                continue;
+
             App app = before.get( uid );
             if (name != null) {
                 if (app == null) {
@@ -161,7 +161,10 @@ public final class Model {
                     apps_.put( uid, app );
                     changed = true;
                 } else {
-                    app.set_name( name );
+                    if (!name.equals( app.name() )) {
+                        app.set_name( name );
+                        changed = true;
+                    }
                     before.remove( uid );
                 }
                 app.save();
@@ -177,6 +180,7 @@ public final class Model {
                 apps_.remove( app.uid() );
                 app.delete();
                 app.save();
+                changed = true;
             }
         }
 

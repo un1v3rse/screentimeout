@@ -3,6 +3,8 @@
 
     <string name="app_name">ScreenTimeout</string>
     <string name="application">Application</string>
+    <string name="detail_screen_blurb">Enable settings using the checkboxes.  The settings will be applied when the app starts up.</string>
+
     <string name="disabled_screen_timeout">Disabled Screen Timeout</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>

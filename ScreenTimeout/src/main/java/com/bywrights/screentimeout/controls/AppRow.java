@@ -28,7 +28,7 @@ public class AppRow extends RelativeLayout {
         TextView name = (TextView)findViewById(R.id.name);
         name.setText( app.name() );
 
-        TextView package_name = (TextView)findViewById(R.id.package_name);
-        package_name.setText( app.package_name() );
+//        TextView package_name = (TextView)findViewById(R.id.package_name);
+//        package_name.setText( app.package_name() );
     }
 }

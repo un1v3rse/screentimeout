@@ -51,6 +51,7 @@ public class AppDetailActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.app_detail_activity);
 
         if (!load_state( STATE )) {
@@ -73,9 +74,6 @@ public class AppDetailActivity extends BaseActivity {
     private final void update_app() {
 
         setTitle( app_.name() );
-
-        //getActionBar().setTitle( getString( R.string.application ) );
-        //getActionBar().setSubtitle( app_.name() );
 
         FragmentManager fm = getSupportFragmentManager();
         Fragment fragment = fm.findFragmentById( R.id.content );

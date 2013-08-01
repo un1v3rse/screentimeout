@@ -5,7 +5,7 @@
         android:layout_height="fill_parent"
         android:orientation="vertical"
         android:baselineAligned="false"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="5dp"
         ><!-- TODO: margin is hack, should be using ActionBar -->
 
     <FrameLayout android:id="@+id/content"

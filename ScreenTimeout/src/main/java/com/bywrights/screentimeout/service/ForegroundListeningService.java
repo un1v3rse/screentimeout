@@ -57,16 +57,6 @@ public final class ForegroundListeningService extends Service {
         listening_thread_.start();
     }
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startid)
-    {
-        int result = super.onStartCommand( intent, flags, startid );
-
-
-
-        return result;
-    }
-
     private String active_app_package() {
         String found = null;
         ActivityManager am = (ActivityManager)getBaseContext().getSystemService(Context.ACTIVITY_SERVICE);
